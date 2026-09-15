@@ -9,3 +9,67 @@ This project is ideal for beginners learning web scraping, ETL workflows, and Py
 You are a marketing analyst at Books Online, a major online used bookstore. As part of your role, you manually keep track of used book prices on rival websites, but you can’t keep up. There are too many books and too many online bookshops! So, you and your team have decided to use Python to build a monitoring system that extracts pricing information from other online bookshops.
 Your team leader, Sam, has asked you to build a beta version of the monitoring system to track book prices at Books to Scrape, an online book retailer. For the beta version, the system won’t actually ‘monitor’ retailer book prices through time. Instead, it will just be an application that can be run on-demand to extract prices from Books to Scrape.
 &nbsp;
+### **Requirements:**
+&nbsp;
+1- You need to have python (obviously)
+
+2- Install `BeautifulSoup`
+```bash
+pip3 install beautifulSoup4
+```
+3- On your Python code you need to import it
+```python
+import BeautifulSoup
+```
+
+# Features
+It extracts book data from the website **BooksToScrape.com**, including:
+
+- Product page URL  
+- UPC  
+- Title  
+- Prices (incl./excl. tax)  
+- Availability  
+- Description  
+- Category  
+- Review rating  
+- Image URL  
+- Downloaded image file  
+
+
+# Implementation of the ETL process:
+
+- Extract relevant and specific data from the source website;
+
+## How to Run in Jupyter Notebook
+
+**Important:**  
+Extracted CSV files and images are **not included** in this repository.  
+They are provided separately in a ZIP file as required.
+
+---
+
+## 🔧 Installation Instructions
+
+### 1. Create a virtual environment
+
+**Windows:**
+```bash
+python -m venv venv
+venv\Scripts\activate
+
+## Final Output
+
+The final script (Updated Scraper Phase 4) automatically:
+
+1. Extracts all book categories  
+2. Scrapes all books in each category  
+3. Handles pagination  
+4. Downloads all book images  
+5. Saves one CSV file per category  
+6. Stores images in category‑specific folders  
+
+
+```python
+/content/extracted_data/
+```
